@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+
+    <title>2° Proyecto</title>
+  </head>
+  <body>
+    <!--  Navegacion--! -->
+      <nav class="navbar navbar-light bg-light">
+        <a href="" class="navbar-brand">
+           <h2>Stock</h2>
+        </a>
+      </nav>
+      <!-- Formulario -->
+      <div class="container">
+        <div id="app" class="row pt-5">
+          <div class="col-md-4">
+            <div class="card">
+              <div  class="card-header">
+                <h4>Agrega un producto</h4>
+              </div>
+              
+                <form id="form" class="card-body">
+                  <div  class="form-group">
+                    <input type="text" id="Nombre" placeholder="Ingrese el producto" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <input type="number" id="Cantidad" placeholder="Cantidad" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" id="Precio" placeholder="Precio del producto" class="form-control">
+                  </div>
+                  <br>
+                  <input type="submit" value="Guardar" class="btn btn-primary">
+
+                </form>
+              
+            </div>
+          </div>
+           <!-- Inventario] -->
+            <div id="lista-productos" class="col-md-8">
+
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+
+ 
+    
+     <script src="Js/script.js"></script> 
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
