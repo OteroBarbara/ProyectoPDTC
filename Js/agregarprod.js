@@ -17,8 +17,9 @@ const guardarDatos = function(event) {
         "id": id++,
         "nombre": document.querySelector("#Nombre").value,
         "cantidad": document.querySelector("#Cantidad").value,
-        "precio": document.querySelector("#Precio").value
+        "precio": document.querySelector("#Precio").value,
     }
+
     productos.push(producto)
     localStorage.setItem(
         'products', JSON.stringify(productos)
@@ -34,12 +35,13 @@ const mostrarDatos = function() {
     document.querySelector("table tbody").innerHTML = ''
     productos.forEach(element => {
         document.querySelector("table tbody").innerHTML += `
-        <tr>
+        <tr id="row-${element.id}">
                 <th scope="row">${element.id}</th>
                 <td>${element.nombre}</td>
                 <td>${element.cantidad}</td>
                 <td>${element.precio}</td>
                 <td>${element.precio * element.cantidad}</td>
+                <td><input type="button" class="btn btn-danger" value="X" id="btn-${element.id}" onclick="deleteProduct(this)"/></td> 
         </tr>
     `
     })
