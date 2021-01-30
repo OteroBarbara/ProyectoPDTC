@@ -1,12 +1,16 @@
-/* div.sticky {
-    position:sticky;
-    top: 0;
-  } */
 
   h5    {
       color: whitesmoke;
+      padding-left: 10%;
+      font-size: 2em;
+      font-style: italic;
   }
 
+  h4 {
+        color:slategray;
+        font-size: 1.5em;
+        font-weight: 900;
+        }
   button {
       color: whitesmoke;
       font-size: small;
