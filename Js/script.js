@@ -66,8 +66,8 @@ const mostrarDatos = function() {
                 <th scope="row">${element.id}</th>
                 <td>${element.nombre}</td>
                 <td>${element.cantidad}</td>
-                <td>${element.precio}</td>
-                <td>${element.precio * element.cantidad}</td>
+                <td>$${element.precio}</td>
+                <td>$${element.precio * element.cantidad}</td>
                 <td><input type="button" class="btn btn-danger" value="X" id="btn-${element.id}" onclick="deleteProduct(this)"/></td> 
         </tr>
     `
