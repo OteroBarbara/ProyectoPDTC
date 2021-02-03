@@ -38,16 +38,17 @@
 
                     <form id="form" class="card-body">
                         <div class="form-group">
-                            <input type="text" id="Nombre" id="-nombre" placeholder="Ingrese el producto" class="form-control">
+                            <input type="text" id="Nombre" id="-nombre" placeholder="Ingrese el producto" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <input type="number" id="Cantidad" placeholder="Cantidad" class="form-control">
+                            <input type="number" id="Cantidad" placeholder="Cantidad" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" id="Precio" placeholder="Precio del producto" class="form-control">
+                            <input type="text" id="Precio" placeholder="Precio del producto" class="form-control" required>
                         </div>
                         <br>
-                        <input type="submit" value="Guardar" class="btn btn-primary"> <!-- <input type="submit" value="Limpiar" class="btn btn-danger">  -->
+                        <input type="submit" value="Guardar" class="btn btn-primary">
+                        <!-- <input type="submit" value="Limpiar" class="btn btn-danger">  -->
 
                     </form>
                 </div>
@@ -58,8 +59,8 @@
             <div class="container-fluid">
                 <nav class="navbar navbar-light bg-light">
                     <a href="#Nombre" class="navbar-brand">
-                        <h4>Productos</h4> 
-                        <!-- <button style="background-color:green;">Agregar</button>--> <button class="btn btn-danger" id= "eliminar-todo">Eliminar todo</button> 
+                        <h4>Productos</h4>
+                        <!-- <button style="background-color:green;">Agregar</button>--><button class="btn btn-danger" id="eliminar-todo">Eliminar todo</button>
 
                     </a>
 
@@ -73,7 +74,8 @@
                                 <th scope="col">Cantidad</th>
                                 <th scope="col">Precio unitario</th>
                                 <th scope="col">Precio total</th>
-                                <th scope="col">Eliminar</th> <!--agregado -->
+                                <th scope="col">Eliminar</th>
+                                <!--agregado -->
                             </tr>
                         </thead>
                         <tbody>
@@ -82,9 +84,7 @@
 
                 </div>
 
-                <script src="Js/agregarprod.js"></script>
                 <script src="Js/script.js"></script>
-                <script src="Js/eliminar-item.js"></script>
                 <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
